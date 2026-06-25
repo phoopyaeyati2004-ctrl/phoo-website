@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My MOM!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="welcome-screen" class="container">
+       <img src="mom.jpg" alt="Mom" class="mom-photo">
+        <h1 class="title">Happy Birthday my lady</h1>
+        <p class="subtitle">I made this just for lovely Su👷🏻‍♀️🤱🏻</p>
+        <p class="desc">Play a little game to unlock your surprises</p>
+        <button id="start-btn" class="btn">Start Game ➔</button>
+    </div>
+
+    <div id="game-screen" class="container hidden">
+        <h2 class="section-title">Let's play a little game before your surprise</h2>
+        <p class="instructions">Tap two cards to find the matching pairs!</p>
+        <p class="moves-counter">Moves: <span id="moves-count">0</span></p>
+        
+        <div class="card-grid" id="card-grid">
+            </div>
+        
+        <div id="game-success" class="success-message hidden">
+            <p>Yay! You found all the pairs</p>
+            <button id="continue-btn" class="btn">Continue ➔</button>
+        </div>
+    </div>
+
+    <div id="letter-screen" class="container hidden">
+        <h2 class="section-title">Reasons Why I Love You</h2>
+        <p class="instructions">Tap each heart to reveal one reason.</p>
+        
+        <div class="reasons-list">
+            <div class="reason-item" onclick="revealReason(this)">
+                <div class="heart-icon">❤️ Your Sacrifices</div>
+                <div class="reason-text hidden">You always put my happiness before your own and give me everything you can.😭❤️‍🩹💞.</div>
+            </div>
+            <div class="reason-item" onclick="revealReason(this)">
+                <div class="heart-icon">❤️ Your Endless Care</div>
+                <div class="reason-text hidden">No matter how old I become, you never stop loving and caring for me💞.</div>
+            </div>
+            <div class="reason-item" onclick="revealReason(this)">
+                <div class="heart-icon">❤️ Your kind heart</div>
+                <div class="reason-text hidden">Your kindness teaches me how to be a better person every day.👩🏻‍🍳👩🏻‍🎓👩‍🏫</div>
+            </div>
+            <div class="reason-item" onclick="revealReason(this)">
+                <div class="heart-icon">❤️ Your Strength</div>
+                <div class="reason-text hidden">You stay strong through every challenge and inspire me to do the same🤱🏻💪🥰.</div>
+            </div>
+            <div class="reason-item" onclick="revealReason(this)">
+                <div class="heart-icon">❤️ Your Support</div>
+                <div class="reason-text hidden">You believe in me even when I doubt myself.🫶🙇🏻‍♀️</div>
+            </div>
+            <div class="reason-item" onclick="revealReason(this)">
+                <div class="heart-icon">❤️ My Greatest Blessing</div>
+                <div class="reason-text hidden">You believe in me even when I doubt myself.🫶🙇🏻‍♀️</div>
+            </div>
+        </div>
+
+        <button id="open-letter-btn" class="btn hidden">Open Your Letter</button>
+
+        <div id="letter-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-modal" id="close-modal">&times;</span>
+                <h3>Happy Birthday to the person who owns my heart... 🥰</h3>
+                <p>Happy 53th’s birthday ပါ 💞🍀အမေရေ ကျန်းကျန်းမာမာပျော်”ရွှင်”နေပေးပါနော်
+နေကောင်းအောင်လဲနေပါနော်သမီးအောင်မြင်တဲ့အချိန်ကျ အမေကို အလုပ်တွေကနားပြီး စိတ်ဖီစီးမှုတွေမရှိဘဲ အေးအေးချမ်းချမ်းထားနိုင်တဲ့အချိန်မြန်မြန်ရောက်ရပါစေရှင်💞💪ထီလဲပေါက်ပါစေနော် အာဘွား အများကြီးချစ်တယ်အမေ🫶🤱🏻</p>
+                <p>I love you forever, my lady 💖</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
