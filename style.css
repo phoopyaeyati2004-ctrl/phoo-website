@@ -1,0 +1,134 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fceef0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(243, 161, 175, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.hidden {
+    display: none !important;
+}
+.btn {
+    background-color: #d6336c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #b02353;
+}
+
+.title { color: #d6336c; font-size: 32px; margin-bottom: 5px; }
+.subtitle { color: #888; font-size: 18px; margin-top: 0; }
+.desc { color: #555; font-size: 14px; }
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card {
+    height: 70px;
+    background-color: #f1f3f5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid #ffaec9;
+    transition: transform 0.2s;
+}
+
+.card.flipped {
+    background-color: #fff0f6;
+    transform: rotateY(180deg);
+}
+
+.reasons-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.reason-item {
+    background: #fff0f6;
+    border: 1px solid #ffdeeb;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.heart-icon {
+    font-weight: bold;
+    color: #d6336c;
+}
+
+.reason-text {
+    margin-top: 5px;
+    color: #444;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.modal {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 85%;
+    max-width: 350px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 24px; cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.mom-photo{
+    width:140px;
+    height:150px;
+  border:5px solid #ffb3c6;
+    margin-bottom:15px;
+    box-shadow:0 4px 15px rgba(0,0,,0.2);
+}
